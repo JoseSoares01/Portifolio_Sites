@@ -4,52 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles.css">
-    <title>FP Sellection</title>
+    <title>FP Selection</title>
 </head>
 <body>
 
- <header>
-
+<header>
     <img src="./imagens/logo.png" alt="logo fp">
     <nav>
         <ul>
-            <li>HOME</li>
-            <li>CARROS</li>
-            <li>FALE CONOSCO</li>
-        </ul>
+            <li><a href="#home"><strong>HOME</strong></a></li>
+            <li><a href="#carros">CARROS</a></li>
+            <li><a href="#fale-conosco">FALE CONOSCO</a></li>
+        </ul>        
     </nav>
+</header>
 
- </header>
- 
- <section>
+<section class="container">
     <div class="list">
-        <div class="item">
+        <div class="item active">
             <div class="car-img">
                <img src="/imagens/1.png" alt="imagem-carro">
             </div>
             <div class="content">
-                <p class="car-information">
-                    Único Dono
-                </p>
-                <h2>
-                    Ferrari
-                </h2>
+                <p class="car-information">Único Dono</p>
+                <h2>911 Turbo</h2>
                 <p class="description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, fuga soluta! Dolor rem voluptas similique, ut eaque odio id eos eveniet quae et ipsam aperiam sit ex ullam repellat veniam?
+                    O Porsche 911 Turbo é a combinação perfeita de potência e precisão. Equipado com um motor boxer turbo, oferece desempenho impressionante em qualquer estrada. Ideal para quem busca emoção ao volante.
                 </p>
-                <button class="information">
-                    Saiba Mais
-                </button>
+                <button class="information">Saiba Mais</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="car-img">
+               <img src="/imagens/2.png" alt="imagem-carro">
+            </div>
+            <div class="content">
+                <p class="car-information">2023</p>
+                <h2>Ferrari F8 Tributo</h2>
+                <p class="description">
+                    A Ferrari F8 Tributo, um dos carros mais rápidos da marca, apresenta uma estética elegante e desempenho inigualável. Com 720 cv, ela combina alta performance com o legado de design da Ferrari.
+                </p>
+                <button class="information">Saiba Mais</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="car-img">
+               <img src="/imagens/3.png" alt="imagem-carro">
+            </div>
+            <div class="content">
+                <p class="car-information">Único Dono</p>
+                <h2>Lamborghini Aventador</h2>
+                <p class="description">
+                    O Aventador é o supercarro icônico da Lamborghini. Seu motor V12 gera um rugido feroz e entrega uma experiência de condução incomparável. Perfeito para quem busca alta adrenalina.
+                </p>
+                <button class="information">Saiba Mais</button>
             </div>
         </div>
     </div>
 
     <div class="arrows">
-        <button><img src="/imagens/button.png" alt="seta esquerda" /></button>
-        <button><img src="/imagens/button.png" alt="seta direita" /></button>
+        <button id="prev"><img src="/imagens/button.png" alt="seta esquerda" /></button>
+        <button id="next"><img src="/imagens/button.png" alt="seta direita" /></button>
     </div>
     
-
     <div class="indicators">
         <div class="numbers">01</div>
         <ul>
@@ -59,7 +78,7 @@
         </ul>
     </div>
 
- </section>
-    
+</section>
+    <script src="./scripts.js"></script>
 </body>
 </html>
